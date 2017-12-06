@@ -9,10 +9,10 @@ Specifies the target computer for the management operation. Enter a fully qualif
 Specifies a user account that has permission to perform this action. The default is the current user. Type a user name, such as User01, Domain01\User01, or User@Contoso.com. Or, enter a PSCredential object, such as an object that is returned by the Get-Credential cmdlet. When you type a user name, you are prompted for a password.
 
 ### Example - Show local machine's disk usage
-    DiskSpace
+    PS> DiskSpace
 
 ### Example - Show COMPUTER1 disk usage
-    DiskSpace -ComputerName COMPUTER1 -Cred DOMAIN\USERNAME
+    PS> DiskSpace -ComputerName COMPUTER1 -Cred DOMAIN\USERNAME
 
 ### Example - Show COMPUTER1, COMPUTER2 and COMPUTER3 disk usage
-    DiskSpace -ComputerName @('COMPUTER1', 'COMPUTER2', 'COMPUTER3') -Cred DOMAIN\USERNAME
+    PS> DiskSpace -ComputerName @('COMPUTER1', 'COMPUTER2', 'COMPUTER3') -Cred DOMAIN\USERNAME
